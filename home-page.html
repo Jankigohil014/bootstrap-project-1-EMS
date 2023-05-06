@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EMS 2.O</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="../custom-styles.css" />
+        <style>
+            .gradient-logo {
+                font-weight: bold;
+                font-size: 30px;
+                background: #0dcaf0;
+                background: linear-gradient(to top, #0dcaf0 26%, #dc3545 71%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow mb-3">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <span class="gradient-logo px-0 px-lg-5">EMS 2.O</span>
+                </a>
+
+                <button
+                    type="button"
+                    class="navbar-toggler border-0"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#Navbar-Links"
+                    aria-expanded="false"
+                    aria-controls="Navbar-Links"
+                    aria-label="Toggle-Navigation"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-list mb-1"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                        />
+                    </svg>
+                </button>
+
+                <div class="collapse navbar-collapse" id="Navbar-Links">
+                    <!-- nav-links -->
+                    <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+                        <li class="nav-item">
+                            <a
+                                href="home-page.html"
+                                class="nav-link active"
+                                aria-current="page"
+                            >
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="employee-page.html" class="nav-link">
+                                Employees
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="job-page.html" class="nav-link"> Jobs </a>
+                        </li>
+                    </ul>
+                    <!-- nav-form -->
+                    <form class="d-flex" role="search">
+                        <div class="hstack gap-2">
+                            <input
+                                type="search"
+                                class="form-control"
+                                placeholder="Search For.."
+                                aria-label="Search"
+                            />
+                            <button type="submit" class="btn btn-success">
+                                Search
+                            </button>
+                            <div class="vr" style="color: white"></div>
+                            <a
+                                href="./index.html"
+                                class="btn btn-danger"
+                                style="width: 160px"
+                            >
+                                <i class="bi bi-power"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar Finish -->
+
+        <!-- Container -->
+        <div class="container-fluid mt-3">
+            <div class="row justify-content-center">
+                <div class="headings display-6">
+                    Welcome To Employee Management System 2.O
+                </div>
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center text-bg-info shadow">
+                        <div class="card-header">Employees</div>
+                        <div class="card-body">
+                            <span class="fs-1">250+</span>
+                        </div>
+                        <a
+                            href="employee-page.html"
+                            class="card-footer text-decoration-none"
+                        >
+                            View Employee List
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <div class="card text-center text-bg-info shadow">
+                        <div class="card-header">Jobs</div>
+                        <div class="card-body">
+                            <span class="fs-1">43+</span>
+                        </div>
+
+                        <a
+                            href="job-page.html"
+                            class="card-footer text-decoration-none"
+                        >
+                            View Jobs List
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container Finish -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
